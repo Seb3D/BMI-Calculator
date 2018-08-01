@@ -1,5 +1,5 @@
-/*Kleiner Kalorienzähler mit Fenster
-* Version 1.0
+/*Kleiner BMI Rechner mit Fenster
+* Version 0.1.1a
 * @author Sebastian Lein
 */
 
