@@ -1,11 +1,9 @@
 /*Kleiner BMI Rechner mit Fenster
-* Version 0.1.2a
+* Version 0.2.1a
 * @author Sebastian "Seb3D" Lein
 */
 
 package pack1;
-
-import javax.swing.*;
 
 public class BMIRechner{
 	public static void main (String [] args){
@@ -14,31 +12,17 @@ public class BMIRechner{
 		System.out.println("Vielen Dank, dass du meinen BMI Rechner verwendest :D");
 		System.out.println("=====================================================");
 		
-		//Komponenten:
-		double groesse;
-		double gewicht;
-		double bmi;
+		//Komponenten:		
+		Calculation user = new Calculation();		
 		
 		//Eingabe Fenster:
-		String eingew = JOptionPane.showInputDialog("Geben Sie ihre Groesse ein (in cm): ");
-		groesse = Double.parseDouble(eingew);
+		user.eingabe();
 		
-		String eingro = JOptionPane.showInputDialog("Geben Sie ihr Gewicht ein (in Kilo): ");
-		gewicht = Double.parseDouble(eingro);
+		//Ausrechnen
+		user.ausrechnen();
 		
-		bmi = gewicht / ((groesse/100) * (groesse/100));
-		
-		if(bmi >=26){
-				JOptionPane.showMessageDialog(null, "Dein BMI betraegt " + bmi + " / Du hast leider Uebergewicht.");
-		}
-		else{
-			if(bmi<=20){
-				JOptionPane.showMessageDialog(null, "Dein BMI betraegt " + bmi + " / Du hast leider Untergewicht.");				
-			}
-			else{
-				JOptionPane.showMessageDialog(null, "Dein BMI betraegt " + bmi + " / Du hast Normalgewicht");				
-			}
-		}
+		//Ergebnis Fenster:
+		user.ergebnis();
 		
 		
 	}
