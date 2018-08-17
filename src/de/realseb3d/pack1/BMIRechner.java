@@ -1,9 +1,9 @@
 /*Kleiner BMI Rechner mit Fenster
-* Version 0.2.1a
+* Version 0.2.2a
 * @author Sebastian "Seb3D" Lein
 */
 
-package pack1;
+package de.realseb3d.pack1;
 
 public class BMIRechner{
 	public static void main (String [] args){

@@ -1,4 +1,4 @@
-package pack1;
+package de.realseb3d.pack1;
 
 import javax.swing.JOptionPane;
 
@@ -7,6 +7,18 @@ public class Calculation {
 	private double groesse, gewicht, bmi;
 	
 	public Calculation() {		
+		
+	}
+	
+	public void setGroesse (double g) {
+		
+		groesse = g;
+		
+	}
+	
+	public void setGewicht (double g) {
+		
+		gewicht = g;
 		
 	}
 	
